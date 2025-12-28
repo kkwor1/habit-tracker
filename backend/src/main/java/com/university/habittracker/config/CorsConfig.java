@@ -20,7 +20,7 @@ public class CorsConfig {
                 registry.addMapping("/api/**") // match all API endpoints
                         .allowedOrigins(
                                 "http://localhost:5173",                // React dev server
-                                "https://habit-tracker.vercel.app"     // Production frontend
+                                "https://habit-tracker-psi-sepia.vercel.app"     // Production frontend
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*");
