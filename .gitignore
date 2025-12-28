@@ -1,0 +1,14 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Backend (Java / Spring Boot)
+target/
+*.log
+
+# Frontend (Vite / React)
+node_modules/
+dist/
+
+# OS
+.DS_Store
