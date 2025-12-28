@@ -5,13 +5,12 @@ import axios from 'axios';
  * Base URL points to the backend server
  */
 const axiosInstance = axios.create({
-    // Use relative base so Vite dev proxy handles requests and path joining is predictable
-    baseURL: '/api',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    timeout: 10000,
+  baseURL: import.meta.env.VITE_API_URL,
+  headers: {
+    'Content-Type': 'application/json',
+  },
 });
+
 
 // Request interceptor for logging and token injection (if needed)
 axiosInstance.interceptors.request.use(
